@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import pandas as pd
 import matplotlib
 import matplotlib.pyplot as plt
@@ -16,10 +10,6 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import confusion_matrix
 import numpy as np
-
-
-# In[ ]:
-
 
 data = pd.read_csv('E:/睡眠中的人体压力检测数据集.csv')
 data.head(10)
@@ -245,10 +235,3 @@ plt.title('PR曲线')
 # 计算AP(直接计算线下面积)
 
 round(np.trapz(y=precision[::-1],x=recall[::-1]),2)
-
-
-# In[ ]:
-
-
-
-
